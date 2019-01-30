@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-export function login(username, password) {
+export function loginByUsername(username, password) {
   return request({
     url: '/user/login',
     method: 'post',
@@ -11,7 +11,7 @@ export function login(username, password) {
   })
 }
 
-export function getInfo(token) {
+export function getUserInfo(token) {
   return request({
     url: '/user/info',
     method: 'get',
